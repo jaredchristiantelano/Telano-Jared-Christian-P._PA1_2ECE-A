@@ -4,6 +4,21 @@
    
 Code Description: This code uses the list() function and turns the string from user input into a list before sorting the characters in alphabetical order using sorted(). After arranging it in order, the list is turned into a string again using the function "".join(). 
 
+Code
+```
+# Alphabet Soup Problem 
+
+def alphabet_soup(word):                          # Creates a function
+    x = list(word)                                # Arranges the characters of a string into a list
+    y = sorted(x)                                 # Sorting the list in alphabetical order   
+    z = "".join(y)                                # Turning the list into a string again 
+    return print(f"The arranged word is {z}")     # Prints out the arranged word
+
+```
+
+```
+alphabet_soup(word = input("Enter a word: "))     # Gets user input for the string  
+```
 
 2. **Emotify Problem**: Create a function that changes specific words into emoticons. Given a sentence as a string, replace the words smile, grin, sad, and mad with their corresponding emoticon.
    
